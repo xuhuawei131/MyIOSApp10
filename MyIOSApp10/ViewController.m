@@ -7,12 +7,24 @@
 //
 
 #import "ViewController.h"
-
+#import "ViewController2.h"
 @interface ViewController ()
+
 
 @end
 
 @implementation ViewController
+
+//跳转到另外一个页面 之前的回调
+-(void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender{
+    //目标页面的ViewControler
+   ViewController2* viewControler=segue.destinationViewController;
+   viewControler.viewControler=self;
+    
+
+}
+
+
 
 - (void)viewDidLoad {
     [super viewDidLoad];

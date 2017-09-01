@@ -10,6 +10,8 @@
 
 @interface ViewController : UIViewController
 
+@property (weak, nonatomic) IBOutlet UILabel *textResult;
+@property (weak, nonatomic) IBOutlet UITextField *editResult;
 
 @end
 
